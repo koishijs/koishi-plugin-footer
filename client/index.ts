@@ -11,7 +11,7 @@ export default function (ctx: Context) {
         onClick() {
           open(item.link, '_blank')
         },
-      }, [item.text])
+      }, () => [item.text])
     })),
   })
 }
